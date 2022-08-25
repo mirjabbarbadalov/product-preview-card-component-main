@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    width: 40vw;
+    height: 65vh;
+    display:flex;
+    margin: auto;
+    margin-top: 10vw;
+}
+
+.image-section{
+    width: 20vw;
+    height: 65vh;
+}
+
+.info-section{
+    width: 20vw;
+    height: 65vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    padding: 2rem;
+}
+
+.image{
+    width: 20vw;
+    height: 65vh; 
+    border-radius: 10px 0 0 8px;  
+}
+
+.image-phone{
+    display: none;
+}
+
+.info-section-title{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.info-section-header{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-top: 2rem;
+}
+
+.info-section-description{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: -0.2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.info-section-price{
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.span-price{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    text-decoration:line-through;
+    position: relative;
+    bottom: 8px;
+}
+
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family:'Montserrat', sans-serif; 
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+    margin-left: 16px;
+    border: none;
+    border-radius: 8px;
+    transition: .8ms;
+}
+
+button:hover,
+button:active{
+    background-color: hsl(158, 46%, 23%);
+    cursor: pointer;
+}
+
+i{
+    margin-right: 10px;
+    font-size: medium;
+}
+
+@media screen and (max-width: 1440px){
+   .container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+   margin-left: auto;
+   margin-right: auto;
+}
+.image{
+    display: none; 
+}
+
+.image-phone{
+    display: block;
+    width: 80vw;
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
+}
+
+.info-section{
+    width: 80vw;
+    height: 60vh;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.info-section-title{
+    margin-top: 2px;
+}
+
+.info-section-header{
+    margin-top: 6px;
+}
+}
+
+
